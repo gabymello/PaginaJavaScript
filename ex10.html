@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversor de Temperatura</title>
+  <link rel="stylesheet" href="ex10.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Temperatura</h1>
+
+    <form id="form">
+      <label for="temperatura">Digite a temperatura em Celsius:</label>
+      <input type="number" id="temperatura" placeholder="Temperatura em Celsius" required />
+
+      <div>
+        <input type="radio" id="fahrenheit" name="conversao" value="fahrenheit" />
+        <label for="fahrenheit">Para Fahrenheit</label>
+      </div>
+      
+      <div>
+        <input type="radio" id="kelvin" name="conversao" value="kelvin" />
+        <label for="kelvin">Para Kelvin</label>
+      </div>
+
+      <button type="button" onclick="converterTemperatura()">Converter</button>
+    </form>
+
+    <div id="resultado">
+      <p id="resultadoTexto"></p>
+    </div>
+  </div>
+  <a href="../index.html" class="voltar">← Voltar para a página inicial</a>
+  <script src="ex10.js"></script>
+</body>
+</html>
